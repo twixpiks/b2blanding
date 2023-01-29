@@ -1,0 +1,49 @@
+.progress {
+    height: 850px;
+    box-sizing: border-box;
+    text-align: center;
+    background-color: #27292d;
+    padding-top: 60px;
+
+}
+
+.progress h2 {
+    font-size: 48px;
+    margin: 30px;
+    color: white;
+}
+
+.progress p {
+    color: #cacacb;
+    font-size: 20px;
+    font-weight: 500;
+    font-family: Helvetica Neue,
+        Helvetica,
+        Roboto,
+        Segoe UI,
+        Arial,
+        sans-serif;
+}
+
+.progress img {
+    height: 50%;
+    width: 60%;
+    min-width: 600px;
+}
+
+@media only screen and (max-width:900px) {
+    .progress {
+        height: auto;
+        padding-bottom: 30px;
+    }
+
+    .progress img {
+        width: 100%;
+        min-width: auto;
+        height: auto;
+    }
+
+    .progress h2 {
+        font-size: 28px;
+    }
+}

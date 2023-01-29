@@ -1,0 +1,99 @@
+.usp {
+    margin: 0;
+    background-color: black;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    overflow: hidden;
+    box-sizing: border-box;
+    height: fit-content;
+}
+
+
+.usp__container {
+    margin: 0 auto;
+    display: flex;
+    max-width: 1200px;
+    justify-content: space-between;
+    overflow-x: scroll;
+}
+
+.usp__partners,
+.usp__connect,
+.usp__benefits {
+    height: 600px;
+    width: 400px;
+    background-color: #27292d;
+    border: 20px;
+    border-radius: 40px;
+    box-sizing: border-box;
+    position: relative;
+    margin: 10px;
+    min-width: 300px;
+
+}
+
+.usp__container img {
+    width: 100%;
+    max-width: 600px;
+    margin: 0;
+    height: 50%;
+    max-height: 300px;
+    bottom: 0;
+    position: absolute;
+    border: #27292d;
+    border-radius: 20px;
+}
+
+.usp h3 {
+    color: #20cb50;
+    font-size: 36px;
+    font-weight: 700;
+    font-family: Helvetica Neue,
+        Helvetica,
+        Roboto,
+        Segoe UI,
+        Arial,
+        sans-serif;
+    ;
+}
+
+.usp p {
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+    font-family: Helvetica Neue,
+        Helvetica,
+        Roboto,
+        Segoe UI,
+        Arial,
+        sans-serif;
+}
+
+.usp__content {
+    width: 100%;
+    max-width: 600px;
+    margin: 0;
+    height: 50%;
+    max-height: 300px;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+@media only screen and (max-width: 900px) {
+
+    .usp__partners,
+    .usp__connect,
+    .usp__benefits {
+        height: 500px;
+    }
+
+    .usp p {
+        font-size: 18px;
+        padding-bottom: 10px;
+        font-weight: 500;
+    }
+
+    .usp h3 {
+        font-size: 26px;
+    }
+}

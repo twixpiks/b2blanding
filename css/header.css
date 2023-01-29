@@ -1,0 +1,121 @@
+header {
+    background-color: #27292d;
+    position: fixed;
+    width: 100%;
+    height: 56px;
+    margin: 0 0;
+    font-weight: bold;
+    top: 0;
+    border-bottom: black solid 2px;
+    z-index: 10;
+    box-sizing: border-box;
+}
+
+.header__logo {
+    float: left;
+    width: 101px;
+    height: 36px;
+    margin: 10px 20px;
+    margin-right: 0px;
+    padding: 0;
+}
+
+header img {
+    width: 81px;
+    height: 36px;
+}
+
+.header__navigation {
+    color: #cacacb;
+    float: left;
+}
+
+
+.header__languages,
+.header__blog,
+.header__community,
+.header__companies {
+    height: 56px;
+    float: left;
+    margin-left: 20px;
+}
+
+
+.header__contact-button {
+    float: right;
+    width: 101px;
+    height: 20px;
+    color: #12a53c;
+    border: 8px solid #12a53c;
+    border-radius: 8px;
+    background-color: #12a53c;
+    margin: 10px 20px;
+    text-align: center;
+}
+
+.header__contact-button span {
+    color: white;
+    font-size: 14px;
+}
+
+
+.header__navigation-mobile {
+    display: none;
+}
+
+
+
+@media only screen and (max-width: 900px) {
+    .header__navigation {
+        display: none;
+    }
+
+    .header__contact-button {
+        display: none;
+    }
+
+    .header__navigation-mobile span {
+        color: white;
+        font-weight: bold
+    }
+
+    .header__contact-button-mobile {
+        float: left;
+        width: 101px;
+        height: 40px;
+        color: #12a53c;
+        border: 8px solid #12a53c;
+        border-radius: 8px;
+        background-color: #12a53c;
+        margin: 10px 10px;
+        padding-left: 0;
+        padding-right: 0;
+        text-align: center;
+    }
+
+
+
+
+
+    .header__navigation-mobile {
+        display: inline;
+        float: right;
+        height: 56px;
+    }
+
+    .header__contact-button {
+        float: right;
+
+    }
+
+
+
+}
+
+
+.header__navigation-mobile img {
+    margin: 15px 20px 15px 0px;
+    width: 30px;
+    height: 26px;
+    position: relative;
+}

@@ -1,0 +1,164 @@
+.leadform {
+    background-color: black;
+    height: 600px;
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding: 40px;
+    color: white;
+    width: 100%;
+}
+
+.leadform__container {
+    margin: 40px auto;
+    width: 90%;
+    max-width: 900px;
+    height: 440px;
+    display: grid;
+    grid-template:
+        "b a a" auto
+        "b c c" auto
+        "b c c" auto
+}
+
+
+.leadform__sales {
+    grid-area: b;
+}
+
+.leadform__header {
+    grid-area: a;
+    padding: 0;
+    padding-left: 30px;
+}
+
+.leadform__form {
+    grid-area: c;
+    padding: 0;
+    padding-left: 30px;
+}
+
+.leadform__sales img {
+    height: 70%;
+    max-height: 300px;
+}
+
+.leadform h2 {
+    font-size: 24px;
+    margin: 0 auto;
+}
+
+.leadform__header h2 {
+    font-size: 32px;
+    margin: 0 auto;
+}
+
+.leadform__left,
+.leadform__right {
+    float: left;
+    width: 47%;
+    margin-right: 3%;
+}
+
+.leadform__input {
+    box-sizing: border-box;
+    margin: 0;
+    width: 100%;
+    background-color: #27292d;
+    border: 5px;
+    border-radius: 5px;
+    height: 45px;
+
+}
+
+.leadform__form p {
+    margin-bottom: 5px;
+    font-family: Helvetica Neue,
+        Helvetica,
+        Roboto,
+        Segoe UI,
+        Arial,
+        sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.leadform label {
+    margin: 0;
+    height: 10px;
+    display: block;
+}
+
+.leadform__button {
+    box-sizing: border-box;
+    width: 97%;
+    height: 60px;
+    color: #12a53c;
+    border: 18px solid #12a53c;
+    border-radius: 18px;
+    background-color: #12a53c;
+    margin: 20px 0;
+    text-align: center;
+    margin-right: 3%;
+}
+
+.leadform__button span {
+    color: white;
+    font-size: 24px;
+    font-weight: 800;
+}
+
+@media only screen and (max-width:900px) {
+    .leadform {
+        padding: 0;
+        height: fit-content;
+    }
+
+    .leadform__container {
+        width: 100%;
+        grid-template:
+            "a" auto "b" auto "c" auto;
+        margin: 0;
+        height: fit-content;
+    }
+
+    .leadform__sales {
+        width: 100%;
+        box-sizing: border-box;
+        margin-top: 30px;
+    }
+
+    .leadform__sales img {
+        width: 100px;
+        height: 120px;
+        box-sizing: border-box;
+        object-fit: cover;
+        border: #27292d;
+        border-radius: 10px;
+        float: left;
+        margin-right: 20px;
+    }
+
+    .leadform__header {
+        grid-area: a;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .leadform__form {
+        grid-area: c;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .leadform__left,
+    .leadform__right {
+        float: left;
+        width: 90%;
+        box-sizing: border-box;
+    }
+
+    .leadform__button {
+        width: 90%;
+    }
+
+}
